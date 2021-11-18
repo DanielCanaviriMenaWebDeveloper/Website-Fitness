@@ -72,7 +72,8 @@ section {
     justify-content: space-between;
     padding: 0 9%;
     background: $black;
-    
+    z-index: 1000;
+
     .logo {
         font-weight: bolder;
         color: $white;
@@ -127,7 +128,7 @@ section {
             h3 {
                 font-size: 5rem;
                 color: $white;
-                padding: 1rem;
+                padding: 1rem 0;
             }
         }
     }
@@ -141,6 +142,87 @@ section {
 
     &.swiper-pagination-bullet-active {
         background: $red;
+    }
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+
+    .image {
+        flex: 1 1 42rem;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background: $red;
+            height: 15rem;
+            width: 15rem;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        img {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    .content {
+        flex: 1 1 42rem;
+
+        span {
+            font-size: 1.8rem;
+            color: $red;
+        }
+
+        .title {
+            font-size: 3.8rem;
+            color: $white;
+            margin-top: .4.8rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: $light-white;
+            padding: 0.8rem 0;
+            line-height: 1.8;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 1.8rem;
+
+            .box {
+                flex: 1 1 20rem;
+
+                h3 {
+                    font-size: 2rem;
+                    color: $white;
+
+                    i {
+                        padding-right: 1.3rem;
+                        color: red;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -168,6 +250,18 @@ section {
 
     section {
         padding: 3rem 2rem;
+    }
+
+    .home .slide {
+        padding: 2rem 5%;
+
+        .content {
+            width: 50rem;
+
+            h3 {
+                font-size: 4rem;
+            }
+        }
     }
 }
 
@@ -200,6 +294,18 @@ section {
                 display: block;
                 font-size: 2rem;
             }
+        }
+    }
+
+    .about {
+        gap: 3rem;
+
+        .image {
+            margin-top: 5rem;
+        }
+
+        .content .title {
+            font-size: 3rem;
         }
     }
 }
