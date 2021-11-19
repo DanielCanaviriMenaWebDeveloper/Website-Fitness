@@ -446,6 +446,35 @@ section {
 
 }
 
+/* BANNER */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    span {
+        color: $red;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: $white;
+        padding-top: 1rem;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+    }
+
+    p {
+        color: $light-white;
+        margin: 1rem auto;
+        max-width: 60rem;
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+}
+
 
 
 
@@ -458,14 +487,14 @@ section {
 
 
 /* Media Queries */
-@media (max-width:1170px) {
+/* @media (max-width:1170px) {
     html {
         font-size: 55%;
     }
     .features .box-container .box.second {
         flex-flow: column;
     }
-}
+} */
 
 @media (max-width:991px) {
     html {
