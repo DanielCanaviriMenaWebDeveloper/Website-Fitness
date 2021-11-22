@@ -21,3 +21,21 @@ var swiper = new Swiper(".home-slider", {
         clickable: true,
     },
 });
+
+var swiper = new Swiper(".review-slider", {
+	spaceBetween: 20,
+	grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    breakpoints: {
+        0:{
+            sliderPerView: 1,
+        },
+        600:{
+            slidesPerView: 2,
+        }
+    }
+});
