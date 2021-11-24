@@ -597,6 +597,33 @@ section {
   font-size: 5rem;
 }
 
+/* BLOGS */
+.blogs .slide {
+  background: #111;
+}
+
+.blogs .slide:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .slide .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .slide .content {
+  padding: 2rem;
+}
+
 /* Media Queries */
 /* @media (max-width:1170px) {
     html {
